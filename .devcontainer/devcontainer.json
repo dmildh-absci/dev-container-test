@@ -1,0 +1,7 @@
+{
+  "name": "Dev Container Test",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "remoteUser": "coder"
+}
