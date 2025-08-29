@@ -13,15 +13,15 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-# Create a non-root user
-RUN useradd -m -s /bin/bash coder && \
-    echo "coder ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+# # Create a non-root user
+# RUN useradd -m -s /bin/bash coder && \
+#     echo "coder ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
-# Set working directory
-WORKDIR /workspaces
+# # Set working directory
+# WORKDIR /workspaces
 
-# Switch to non-root user
-USER coder
+# # Switch to non-root user
+# USER coder
 
 # Set default shell
 SHELL ["/bin/bash", "-c"]
