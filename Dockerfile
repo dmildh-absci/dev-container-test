@@ -4,13 +4,14 @@ FROM ubuntu:latest
 RUN apt-get update && apt-get install -y \
     htop \
     vim \
-    curl \
-    wget \
+#    curl \
+#    wget \
     iperf3 \
     git \
     python3 \
     python3-pip \
     build-essential \
+#    ncdu \
     && rm -rf /var/lib/apt/lists/*
 
 # # Create a non-root user
